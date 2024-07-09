@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator using Javascript </title>
+  <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+	<div class="container">
+		<div class="calculator">
+			<form>
+				<div class="display">
+					<input type="text" id="result" name="display" disabled>
+				</div>
+				<div>
+					<input type="button" onclick="clearResult()" value="AC" class="operator">
+					<input type="button" onclick="deleteResult()" value="DE" class="operator">
+					<input type="button" onclick="button('%')" value="%" class="operator">
+					<input type="button" onclick="button('/')" value="/"class="operator" >
+				</div>
+				<div>
+					<input type="button" onclick="button('7')" value="7">
+					<input type="button" onclick="button('8')" value="8">
+					<input type="button" onclick="button('9')" value="9">
+					<input type="button" onclick="button('*')"value="*"class="operator" >
+				</div>
+				<div>
+					<input type="button" onclick="button('4')" value="4">
+					<input type="button" onclick="button('5')" value="5">
+					<input type="button" onclick="button('6')" value="6">
+					<input type="button" onclick="button('-')" value="-" class="operator">
+				</div>
+				<div>
+					<input type="button" onclick="button('1')" value="1">
+					<input type="button" onclick="button('2')" value="2">
+					<input type="button" onclick="button('3')" value="3">
+					<input type="button" onclick="button('+')" value="+" class="operator">
+				</div>
+				<div>
+					<input type="button"  onclick="button('00')"value="00">
+					<input type="button" onclick="button('0')" value="0">
+					<input type="button" onclick="button('.')" value=".">
+					<input  type="button" onclick="calculate()" id="equal" value="=" class="operator1">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	
+	
+	<script src="new.js" ></script>
+</body>
+</html>
